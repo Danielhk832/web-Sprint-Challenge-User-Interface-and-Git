@@ -48,7 +48,7 @@ table {
 
 * {
     box-sizing: border-box;
-    border: 1px solid gray;
+    
 }
 
 /*General styles*/
@@ -106,12 +106,21 @@ header nav{
     padding-bottom: .5%;
 }
 /*Top section styling*/
-.bgimg, .bgimg-about{
+.bgimg-about{
     width: 100%;
     padding: 10%;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('/img/jumbo-about.png');
+    margin-top: 3.5%;
+    margin-bottom: 2%;
+}
+.bgimg{
+    width: 100%;
+    padding: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/img/jumbo.jpg');
     margin-top: 3.5%;
     margin-bottom: 2%;
 }
