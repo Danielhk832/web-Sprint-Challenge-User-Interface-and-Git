@@ -48,12 +48,11 @@ table {
 
 * {
     box-sizing: border-box;
-    /* border: 1px solid gray; */
+    border: 1px solid gray;
 }
 
 /*General styles*/
 html, body {
-    height: 100%;
     font-family: 'Roboto', sans-serif;
     color: #4f4f4f;
 }
@@ -69,9 +68,24 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+.container.aboutpage{
+    width: 1000px;
+}
 a{
     text-decoration: none;
     color: #4f4f4f;
+}
+button{
+    background-color: white;
+    color: #4f4f4f;
+    border: 2px solid #4f4f4f;
+    
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #4f4f4f;
+    color:white;
+    transition: .5s;
 }
 
 /*header*/
@@ -92,12 +106,12 @@ header nav{
     padding-bottom: .5%;
 }
 /*Top section styling*/
-.bgimg{
+.bgimg, .bgimg-about{
     width: 100%;
     padding: 10%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('/img/jumbo.jpg');
+    background-image: url('/img/jumbo-about.png');
     margin-top: 3.5%;
     margin-bottom: 2%;
 }
@@ -108,17 +122,26 @@ header nav{
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+.about h1{
+    display: flex;
+    justify-content: left;
+}
 
-.top-content .text-container {
+.top-content .text-container  {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
+.text-container-about{
+    padding: .5% 2% 2% 2%;
+}
 /*middle section styling*/
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+}
+.middle-content.about{
+    border-bottom: none;
 }
 
 .middle-content h2 {
@@ -140,8 +163,25 @@ header nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 2;
 }
 
+.middle-content .boxes .about-box{
+    width: 47%;
+    justify-content: center;
+    /* padding: 5%; */
+    border-bottom: 1px dashed black;
+    margin: 8px;
+    
+}
+.about-box h2, p{
+    padding: 2% 0;
+    text-align: left;
+}
+.about-box button{
+    margin-bottom: 2.5%;
+    padding: 3% 7%;
+}
 /*box colors*/
 .box1{
     background-color: teal;
